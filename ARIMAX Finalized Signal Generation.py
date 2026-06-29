@@ -1,4 +1,6 @@
 """
+Before Signal generation, with the help of preliminaries file, please download symbol_token_df.csv(necessary) and stocks and nifty data.
+
 Signal Generation Pipeline — Nifty 500
 Assumes all stock CSVs and NIFTY50.csv are already downloaded.
 
