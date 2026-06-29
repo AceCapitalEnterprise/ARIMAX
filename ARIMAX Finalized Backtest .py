@@ -71,13 +71,7 @@ PROCESSED_DATA_FOLDER = "data_2016_2026/nifty500/"  # adjust if needed
 # Cache so we don't re-read the same CSV multiple times
 _indicator_cache = {}
 
-INDICATOR_COLS = [
-    "ADX_14","DMP_14","DMN_14","SUPERT_10_3.0","SUPERTd_10_3.0","SUPERTl_10_3.0","SUPERTs_10_3.0",
-    "EMA_20","SMA_50","MACD_12_26_9","MACDh_12_26_9","MACDs_12_26_9",
-    "RSI_14","STOCHk_14_3_3","STOCHd_14_3_3","WILLR_14","CCI_20_0.015","ATRr_14",
-    "BBL_20_2.0","BBM_20_2.0","BBU_20_2.0","BBB_20_2.0","BBP_20_2.0",
-    "OBV","VWAP_D","PSARl_0.02_0.2","PSARs_0.02_0.2","PSARaf_0.02_0.2","PSARr_0.02_0.2","LR_20"
-]
+INDICATOR_COLS = ["RSI_14"]
 def get_indicators_on_date(stock_code, date):
     """
     STRICT: returns LAST candle of the SAME date (no shifting)
