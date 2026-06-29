@@ -77,7 +77,7 @@ def get_indicators_on_date(stock_code, date):
     STRICT: returns LAST candle of the SAME date (no shifting)
     """
     if stock_code not in _indicator_cache:
-        pattern = os.path.join(PROCESSED_DATA_FOLDER, f"*{stock_code}*_processed.csv")
+        pattern = os.path.join(PROCESSED_DATA_FOLDER, f"{stock_code}.csv")
         matches = glob.glob(pattern)
         if not matches:
             return {}
